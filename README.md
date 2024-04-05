@@ -15,6 +15,8 @@ Here is the response for item ID 12.
 
 
 
+
+
 2. In the `mintByCollectionType` function, a check ensures that the quantity does not exceed `maxMintPerTx`. As `maxMintPerTx` is 0 and a quantity of 1 is sent, the condition fails, resulting in transaction reversal.
 
 #### Condition
