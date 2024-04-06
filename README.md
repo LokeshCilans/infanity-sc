@@ -10,11 +10,8 @@
 1. Upon calling `getCollectionInfo` for item ID 12, it was discovered that `maxMintPerTx` is set to 0.
 
 Here is the response for item ID 12.
+
 ![upload_d221ea34af5361f6fce94f38edfb1ced](https://hackmd.io/_uploads/rJReSAskR.png)
-
-
-
-
 
 
 2. In the `mintByCollectionType` function, a check ensures that the quantity does not exceed `maxMintPerTx`. As `maxMintPerTx` is 0 and a quantity of 1 is sent, the condition fails, resulting in transaction reversal.
